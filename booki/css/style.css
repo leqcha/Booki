@@ -66,7 +66,7 @@ h1 {
 
 main p {
     margin-top: 0px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 /* FIN DU HEADER */
@@ -259,17 +259,19 @@ a .card:hover {
     font-size: 13px;
 }
 
+
 .card_prix {
     margin: 5px 0 0 10px;
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-bottom: 0;
     font-size: 12px;
 }
 
 .fa-solid {
     padding-top: -10px;
     font-size: x-small;
+}
+
+.etoiles_populaires {
+    display: flex;
 }
 
 .card_stars {
@@ -305,12 +307,20 @@ a .card:hover {
 
 .card_aside {
     display: flex;
-    align-items: center;
     border: 4px solid white;
     border-radius: 15px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     background-color: white;
 
+}
+
+.card_aside_infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0 10px;
+    padding-left: 20px;
+    font-size: 12px;
 }
 
 .aside_titre {
@@ -319,6 +329,7 @@ a .card:hover {
     align-items: center;
     font-size: 13px;
 }
+
 .aside_titre h2 {
     padding-left: 0;
     margin-bottom: 0;
@@ -329,15 +340,10 @@ a .card:hover {
     font-size: 13px;
 }
 
+
 .fa-aside {
     font-size: large;
     margin-top: 30px;
-}
-
-.card_aside_infos {
-    margin: 10px 0 10px;
-    padding-left: 20px;
-    font-size: 12px;
 }
 
 a .card_aside:hover {
@@ -422,7 +428,6 @@ a .activites_bloc_3 {
     border-radius: 15px 15px 15px 15px;
 }
 
-
 .frioul,
 .notre_dame {
     height: 120px;
@@ -436,7 +441,6 @@ a .activites_bloc_3 {
     padding-top: 14px;
 }
 
-
 /* Footer */
 footer {
     margin: auto;
@@ -444,7 +448,6 @@ footer {
     justify-content: space-around;
     font-family: 'Raleway', sans-serif;
     background-color: #F2F2F2;
-
 }
 
 .bloc_footer {
@@ -458,8 +461,16 @@ footer {
 }
 
 /*Breackpoint desktop petits écrans PC*/
-@media screen and (min-width: 992px) and (max-width: 1250px){
-h1,h2,h3{
-    font-size: medium;
-}
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+
+    h1,
+    h2,
+    h3 {
+        font-size: medium;
+    }
+
+    main p {
+        margin-top: 0px;
+        font-size: 12px;
+    }
 }
