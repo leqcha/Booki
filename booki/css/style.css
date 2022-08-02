@@ -287,9 +287,7 @@ a .card:hover {
 }
 
 .more {
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0 10px 30px;
     font-weight: bold;
 }
 
@@ -415,6 +413,7 @@ a .activites_bloc_3 {
     height: 190px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
 
 .activites_bloc_2 a,
