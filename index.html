@@ -14,6 +14,7 @@
 <!-- BODY -->
 
 <body>
+    <!-- ouverture du main qui comporte tout le site SAUF le footer -->
     <main>
         <header>
             <nav>
@@ -28,7 +29,7 @@
                 </ul>
             </nav>
         </header>
-
+        <!-- recherche formulaire + filtres -->
         <div class="recherche">
             <div class="titre">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -41,10 +42,8 @@
                     </form>
                 </div>
             </div>
-
             <section class="filtre">
-                <p>Filtres</p>
-                <a href="#" class="liste_filtre">
+                <p>Filtres</p> <a href="#" class="liste_filtre">
                     <div class="icone">
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
@@ -73,7 +72,6 @@
                     </div>
                 </a>
             </section>
-
             <div class="info">
                 <div class="info_icone">
                     <i class="fa-solid fa-info"></i>
@@ -83,8 +81,9 @@
                 </div>
             </div>
         </div>
-        <!-- SECTION HEBERGEMENTS ET POPULAIRES -->
+        <!-- HEBERGEMENTS ET POPULAIRES -->
         <div class="hebergements_populaires">
+            <!-- section hébergements -->
             <section id="hebergements">
                 <div class="hebergement_marseille">
                     <h2>Hébergements à Marseille</h2>
@@ -134,7 +133,6 @@
                                 </div>
                             </div>
                         </a>
-
                     </div>
                     <div class="hebergements_marseille_2">
                         <a href="#">
@@ -188,7 +186,7 @@
                     </a>
                 </div>
             </section>
-            <!-- HEBERGEMENTS POPULAIRES -->
+            <!-- POPULAIRES -->
             <aside class="populaires">
                 <div class="aside_titre">
                     <h2>Les plus populaires</h2>
@@ -250,48 +248,53 @@
                 </a>
             </aside>
         </div>
-        <!-- Activités -->
-        <section id="activites">
-            <h3>Activités à Marseille</h3>
-            <div class="lieux">
-                <a href="#" class="activites_bloc_1">
-                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"
-                        class="port">
-                    <p class="activites_nom">Vieux port</p>
+        <!-- Section activités -->
+        <h2 class="Titre2">Activités à Marseille</h2>
+        <section id="Activité">
+            <div class="grande_image">
+                <a href="#" class="lien_act">
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        alt="Image du vieux port">
+                    <h3 class="Nom">Vieux Port</h3>
+                </a> 
+            </div>
+            <div class="moyenne_image">
+                <a href="#" class="lien_act">
+                    <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        alt="Image du fort de pomègues">
+                    <h3 class="Nom"> Fort de Pomègues</h3>
                 </a>
-                <div class="activites_bloc_2">
-                    <a href="#">
-                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"
-                            class="fort">
-                        <p class="activites_nom">Fort de Pomègues</p>
-                    </a>
-                    <a href="#">
-                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Ile du Frioul"
-                            class="frioul">
-                        <p class="activites_nom">Îles du Frioul</p>
-                    </a>
-                </div>
-                <a href="#" class="activites_bloc_3">
+            </div>
+            <div class="mini_image">
+                <a href="#" class="lien_act">
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                        alt="Image des îles du frioul">
+                    <h3 class="Nom">Îles du Frioul</h3>
+                </a>
+            </div>
+            <div class="grande_image">
+                <a href="#" class="lien_act">
                     <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                        alt="Parc National des Calanques" class="calanques">
-                    <p class="activites_nom">Parc National des Calanques</p>
+                        alt="Image du parc nationale des calanques">
+                    <h3 class="Nom">Parc Nationale des Calanques</h3>
                 </a>
-                <div class="activites_bloc_4">
-                    <a href="#">
-                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            alt="Notre-Dame-de-la-Garde" class="notre_dame">
-                        <p class="activites_nom">Notre-Dame-de-la-Garde</p>
-                    </a>
-                    <a href="#">
-                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"
-                            class="longchamp">
-                        <p class="activites_nom">Parc Longchamp</p>
-                    </a>
-                </div>
+            </div>
+            <div class="petite_image">
+                <a href="#" class="lien_act">
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                        alt="Image Notre-Dame-de-la-Garde">
+                    <h3 class="Nom">Notre-Dame-de-la-Garde</h3>
+                </a>
+            </div>
+            <div class="petite_image">
+                <a href="#" class="lien_act">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                        alt="Image du parc longchamp">
+                    <h3 class="Nom">Parc Longchamp</h3>
+                </a>
             </div>
         </section>
     </main>
-    <!-- fin du main -->
     <!-- Footer -->
     <footer>
         <div class="bloc_footer">
@@ -307,7 +310,6 @@
             <a href="#">
                 <p>Données et confidentialité</p>
             </a>
-
         </div>
         <div class="bloc_footer">
             <div class="footer_titre">
@@ -319,7 +321,6 @@
             <a href="#">
                 <p>Soumettre votre hôtel</p>
             </a>
-
         </div>
         <div class="bloc_footer">
             <div class="footer_titre">
