@@ -361,12 +361,12 @@ a .card_aside:hover {
     object-fit: cover;
 }
 
-/* activités */
+/* activitess */
 .Titre2 {
     margin: 40px 0 0 0;
 }
 
-#Activité {
+#activites {
     height: 600px;
     margin: 0 0 20px 0;
     display: flex;
@@ -375,7 +375,8 @@ a .card_aside:hover {
     justify-content: space-around;
     align-content: space-around;
 }
-#Activité .grande_image {
+
+#activites .grande_image {
     height: 90%;
     width: 22%;
     background-color: white;
@@ -385,7 +386,7 @@ a .card_aside:hover {
     overflow: hidden;
 }
 
-#Activité .moyenne_image {
+#activites .moyenne_image {
     height: 45%;
     width: 22%;
     background-color: white;
@@ -394,7 +395,7 @@ a .card_aside:hover {
     border: 1px solid #f2f2f2;
 }
 
-#Activité .petite_image {
+#activites .petite_image {
     height: 40%;
     width: 22%;
     background-color: white;
@@ -403,7 +404,7 @@ a .card_aside:hover {
     border: 1px solid #f2f2f2;
 }
 
-#Activité .mini_image {
+#activites .mini_image {
     height: 35%;
     width: 22%;
     background-color: white;
@@ -412,7 +413,7 @@ a .card_aside:hover {
     border: 1px solid #f2f2f2;
 }
 
-#Activité .Nom {
+#activites .Nom {
     font-size: 13px;
     display: block;
     position: relative;
@@ -422,14 +423,14 @@ a .card_aside:hover {
     font-weight: bold;
 }
 
-#Activité .grande_image img {
+#activites .grande_image img {
     height: 90%;
     width: 100%;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
 }
 
-#Activité .moyenne_image img {
+#activites .moyenne_image img {
     height: 78%;
     width: 100%;
     object-fit: cover;
@@ -437,21 +438,21 @@ a .card_aside:hover {
     border-radius: 25px 25px 0 0;
 }
 
-#Activité .petite_image img {
+#activites .petite_image img {
     width: 100%;
     height: 78%;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
 }
 
-#Activité .mini_image img {
+#activites .mini_image img {
     width: 100%;
     height: 74%;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
 }
 
-#Activité .lien_act {
+#activites .lien_act {
     text-decoration: none;
     color: black;
 }
@@ -494,14 +495,23 @@ footer {
 
 /* Breakpoint version téléphone */
 @media screen and (max-width: 767px) {
-    main{
+    main {
         padding: 0;
     }
 
     .logo {
+        margin-top: 10px;
         width: 100px;
     }
 
+    h1,
+    h2,
+    h3 {
+        font-size: 25px;
+    }
+main p{
+    font-size: 10px;
+}
     header {
         display: flex;
         flex-direction: column;
@@ -513,12 +523,26 @@ footer {
         width: 100%;
     }
 
-    a {
-        font-size: 17px;
+    nav a {
+        font-size: 18px;
+        padding-left: 0;
+    }
+
+    header nav ul li a:hover {
+        color: #0065fc;
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+        padding-bottom: 18px;
     }
 
     nav ul {
-        justify-content: space-between;
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
+
+    .recherche {
+        flex-wrap: wrap;
+        align-items: center;
     }
 
 }
