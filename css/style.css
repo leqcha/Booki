@@ -119,9 +119,18 @@ input:focus {
     padding: 0 10px 0 10px;
 }
 
+.button_mobile {
+    display: none;
+}
 
 /* Filtres */
 .filtre {
+    display: flex;
+    align-items: center;
+}
+
+.liste,
+.eco_fam {
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -475,28 +484,11 @@ footer {
     font-weight: bold;
 }
 
-/*Breakpoint desktop petits écrans PC*/
-@media screen and (min-width: 992px) and (max-width: 1250px) {
-    body {
-        font-size: 12px;
-    }
-
-    h1,
-    h2,
-    h3 {
-        font-size: medium;
-    }
-
-    main p {
-        margin-top: 0px;
-        font-size: 12px;
-    }
-}
-
-/* Breakpoint version téléphone */
+/* Breakpoint version tablette */
 @media screen and (max-width: 767px) {
     main {
         padding: 0;
+        margin-left: 15px;
     }
 
     .logo {
@@ -509,9 +501,11 @@ footer {
     h3 {
         font-size: 25px;
     }
-main p{
-    font-size: 10px;
-}
+
+    main p {
+        font-size: medium;
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -540,9 +534,49 @@ main p{
         padding-left: 0;
     }
 
-    .recherche {
-        flex-wrap: wrap;
-        align-items: center;
+    /* on masque le button */
+    .button {
+        display: none;
     }
 
+    /* on crée le buttun_mobile */
+    .button_mobile {
+        width: 50px;
+        background-color: #0065fc;
+        font-size: 0;
+        border: none;
+    }
+
+    .filtre {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filtre p {
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+    .liste {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .eco_fam, a .liste_filtre, .liste a{
+        margin-bottom: 0;
+    }
+    
+    .eco_fam a{
+        margin: 0 10px 0 0;
+    }
+  
+    .liste_filtre{
+        margin: 10px 0 0 0;
+    }
+
+    .info{
+        margin-top: 30px;
+    }
 }
