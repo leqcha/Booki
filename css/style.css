@@ -79,7 +79,7 @@ main p {
     display: flex;
 }
 
-.formulaire .fa-solid {
+.formulaire .fa-location-dot {
     font-size: 18px;
     background-color: #F2F2F2;
     padding: 15px 20px 10px 20px;
@@ -119,7 +119,20 @@ input:focus {
     padding: 0 10px 0 10px;
 }
 
-.button_mobile {
+.button_mobile, .fa-magnifying-glass{
+    width: 50px;
+    border-radius: 12px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    height: 50px;
+    font-weight: 900;
+    font-size: medium;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -9%;
     display: none;
 }
 
@@ -546,13 +559,23 @@ footer {
     .button {
         display: none;
     }
-
-    /* on crée le buttun_mobile */
-    .button_mobile {
+ 
+    /* on affiche le button_mobile et l'icône*/
+    .fa-magnifying-glass{
         width: 50px;
-        background-color: #0065fc;
-        font-size: 0;
+        border-radius: 12px;
+        background-color: #0065FC;
+        color: white;
         border: none;
+        height: 50px;
+        font-weight: 900;
+        font-size: medium;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -9%;
+        overflow: visible;
     }
 
     .filtre {
