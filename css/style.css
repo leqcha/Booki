@@ -113,7 +113,8 @@ input:focus {
     padding: 0 10px 0 10px;
 }
 
-.button_mobile, .fa-magnifying-glass{
+.button_mobile,
+.fa-magnifying-glass {
     width: 50px;
     border-radius: 12px;
     background-color: #0065FC;
@@ -493,8 +494,19 @@ footer {
     font-weight: bold;
 }
 
-/* Breakpoint version smartphone */
-@media screen and (max-width: 767px) {
+/* Breakpoint grands écrans supérieur à 1250px */
+@media screen and (min-width: 1250px) {
+    body {
+        margin: 0 5% 0 5%;
+    }
+
+    .hebergements_populaires {
+        justify-content: space-around;
+    }
+}
+
+/* breackpoint version tablette*/
+@media screen and (max-width: 992px) {
     main {
         padding: 0;
         margin-left: 15px;
@@ -521,7 +533,7 @@ footer {
         font-size: medium;
     }
 
-    a{
+    a {
         font-size: 13px;
     }
 
@@ -552,9 +564,9 @@ footer {
     .button {
         display: none;
     }
- 
+
     /* on affiche le button_mobile et l'icône*/
-    .fa-magnifying-glass{
+    .fa-magnifying-glass {
         width: 50px;
         border-radius: 12px;
         background-color: #0065FC;
@@ -562,7 +574,7 @@ footer {
         border: none;
         height: 50px;
         font-weight: 900;
-        font-size: medium;  
+        font-size: medium;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -600,7 +612,7 @@ footer {
     .liste_filtre {
         margin: 10px 0 0 0;
     }
-    
+
     .info_icone {
         width: 20px;
         height: 20px;
@@ -669,22 +681,28 @@ footer {
         height: auto;
     }
 
-    .grande_image .lien_act, .moyenne_image .lien_act, .mini_image, .petite_image{
+    .grande_image .lien_act,
+    .moyenne_image .lien_act,
+    .mini_image,
+    .petite_image {
         width: 280px;
         height: 185px;
     }
 
-    footer{
+    footer {
         flex-direction: column;
     }
-    .footer_titre a p{
+
+    .footer_titre a p {
         font-size: 10px;
     }
-    .bloc_footer{
+
+    .bloc_footer {
         margin: 0;
         padding-left: 10px;
     }
-    .bloc_footer:last-child{
+
+    .bloc_footer:last-child {
         margin: 10px 0 20px 0;
     }
 }
