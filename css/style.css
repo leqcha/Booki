@@ -148,10 +148,11 @@ input:focus {
     margin: 15px 0;
 }
 
-.filtre p {
+.filtre h2 {
     margin: 0 10px 0 0;
     font-size: 18px;
     font-weight: bold;
+    padding-left: 0;
 }
 
 .filtre .texte {
@@ -510,6 +511,9 @@ footer {
     .titre2{
         padding-left: 0;
     }
+    .card_aside_image{
+        width: 140px;
+    }
 }
 
 /* Breakpoint version tablette*/
@@ -630,7 +634,7 @@ footer {
     }
 
     .aside_titre h2 {
-        margin-left: 20px;
+        width: 290px;
     }
 
     .card_aside {
@@ -991,7 +995,7 @@ footer {
         margin: 30px 0 0 0;
     }
 
-    .filtre p{
+    .filtre h2{
         text-align: left;
         width: 300px;
     }
