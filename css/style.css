@@ -22,6 +22,7 @@ main {
     width: 150px;
 }
 
+/* navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -49,12 +50,12 @@ a:visited {
     font-size: 15px;
 }
 
+/* barre bleue */
 nav li a:hover {
     font-weight: bold;
     border-top: 2px solid #0065FC;
     padding-top: 27px;
-    padding-left: 15px;
-    padding-right: 15px;
+    color: #0065FC;
 }
 
 h1 {
@@ -103,10 +104,12 @@ input:focus {
     outline: none;
 }
 
+/* pseudo-élement */
 ::placeholder{
     color: black;
 }
 
+/* bouton */
 .button {
     border: 1px solid #0065FC;
     font-weight: bold;
@@ -183,6 +186,7 @@ input:focus {
     color: #0065FC;
 }
 
+/* effet au survol */
 .liste_filtre:hover {
     background-color: #DFECFF;
 }
@@ -259,6 +263,7 @@ a .card {
     box-shadow: 1px 1px 5px 5px #f2f2f2;
 }
 
+/* effet au survol */
 a .card:hover {
     transform: scale(1.05) translate(1px);
 }
@@ -368,6 +373,7 @@ a .card:hover {
     margin-top: 30px;
 }
 
+/* effet au survol */
 a .card_aside:hover {
     transform: scale(1.05) translate(1px);
 }
@@ -383,7 +389,7 @@ a .card_aside:hover {
     object-fit: cover;
 }
 
-/* activites */
+/* Activites */
 .titre2 {
     margin-top: 40px;
     padding-left: 20px;
@@ -399,6 +405,7 @@ a .card_aside:hover {
     align-content: space-between;
 }
 
+/* effet au survol */
 #activites a:hover{
     color:#0065FC;
 }
@@ -516,10 +523,11 @@ footer {
     }
 }
 
-/* Breakpoint version tablette*/
+/* Breakpoint version tablette amorçage version mobile*/
 @media screen and (max-width: 991px) {
     main {
         padding: 0; 
+        overflow: hidden;
     }
 
     header {
@@ -554,6 +562,7 @@ footer {
         font-size: 13px;
     }
 
+    /* création bordure en bas */
     nav {
         flex-direction: column;
         border-bottom: 3px solid #f2f2f2;
@@ -564,13 +573,15 @@ footer {
         font-size: 18px;
         padding-left: 0;
     }
-
+    
+    /* effet au survol */
     nav ul li a:hover {
         color: #0065fc;
         border-bottom: 2px solid #0065fc;
         border-top: none;
         padding-bottom: 17px;
     }
+
 
     nav ul {
         justify-content: space-evenly;
@@ -617,6 +628,7 @@ footer {
         margin: 0px 0 30px 0;
     }
 
+    /* inversement de l'ordre d'affichage */
     .hebergements_populaires {
         flex-direction: column-reverse;
         align-items: center;
@@ -759,6 +771,9 @@ footer {
 
 /* breakpoint grand smartphone */
 @media screen and (max-width: 767px) {
+    main{
+        overflow: hidden;
+    }
 
     .titre {
         display: flex;
@@ -848,6 +863,7 @@ footer {
         font-size: 12px;
     }
 
+    /* populaires */
     .aside_titre {
         justify-content: space-between;
         align-items: baseline;
@@ -884,6 +900,7 @@ footer {
         font-size: 12px;
     }
 
+    /* hebergement */
     #hebergements {
         justify-content: center;
         align-items: center;
@@ -902,6 +919,7 @@ footer {
         height: 195px;
     }
 
+    /* hebergements passe en column */
     .hebergement_marseille,
     .hebergements_marseille_1,
     .hebergements_marseille_2 {
@@ -914,7 +932,6 @@ footer {
     }
 
     .more {
-        width: 350%;
         margin-top: 10px;
     }
 
@@ -947,23 +964,12 @@ footer {
 
 /* beakpoint petit écran smartphone */
 @media screen and (max-width: 414px) {
-    header{
-        margin-left: 0 ;
-    }
-
-    nav{
-        padding: 0;
-    }
-
-    main p {
-        font-size: 15px;
-    }
 
     .recherche{
         justify-content: center;
         align-items: center;
     }
-
+    
     .titre{
         width: 300px;
         margin-top: 20px;
@@ -1097,7 +1103,7 @@ footer {
     }
 
     .titre2 {
-        width: 300px;
+        width: 48%;
         text-align: left;
         margin-left: 56px;
     }
@@ -1112,11 +1118,10 @@ footer {
 
     footer {
         margin: 30px auto 0;
-        padding: 10px 0 30px     0;
+        padding: 10px 0 30px 0;
     }
 
     .bloc_footer, .bloc_footer:last-child {
-        width: 90%;
         margin-left: 47px;
     }
 }
